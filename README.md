@@ -11,7 +11,7 @@ https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit
 On either the Pi or a desktop computer open the web interface to nodered typically located as follows:
   - On the Pi
     - http://127.0.0.1:1880
-  - On a remote computer (same LAN)
+  - From a remote computer (same LAN)
     - http://192.168.1.219:1880 (replacing the ip address to however your lan is configured)
 
 Two nodered dependency palettes must be installed:
