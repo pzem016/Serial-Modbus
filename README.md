@@ -48,4 +48,28 @@ Now that the dependencies are met, the following will detail the process of inte
   - Configure the Modbus serial interface
   - Drop in a Modbus Flex Getter object on to a flow
     - Create/Edit the server
-![GitHub Logo](/images/Modbus-Flex-Getter.png)![GitHub Logo](/images/Modbus-Client-Config.png)
+    - ![GitHub Logo](/images/Modbus-Flex-Getter.png) 
+
+    - ![GitHub Logo](/images/Modbus-Client-Config.png)
+
+- Support the function codes presented by the device
+  - Read Holding Register - 0x03
+  - Read Import Register - 0x04
+  - Write Single Register - 0x06
+  - [ ] ToDo _ Calibaration - 0x41
+
+- Utilize the register address table
+  - Function Codes 0x03 & 0x04
+
+Register |      Description       |  Resolution
+---------|------------------------|---------------------
+0x0000   | Voltage 16 bits        | .1 V
+0x0001   | Current low  16 bits   | .001 A
+0x0002   | Current high 16 bits   |
+0x0003   | Power low    16 bits   | .1 W
+0x0004   | Power high   16 bits   |
+0x0005   | Energy low   16 bits   | Wh
+0x0006   | Energy high  16 bits   | (.001 for kWh)
+0x0007   | Frequency    16 bits   | .1 Hz
+0x0008   | Power Factor 16 bits   | .01 PF
+0x0009   | Alarm Status           | 0xFFFF on / 0x0000 off
