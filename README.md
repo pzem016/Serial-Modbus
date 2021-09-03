@@ -21,6 +21,6 @@ Two nodered dependency palettes must be installed:
     - Assorted UI (user interface) controls
 
 Installing the required palettes is straight forward and can be done through the web as linked above. You first go to the vertical stack menue and choose Manage Palette. Then select the install tab. Coping and pasting the name of the package and clicking the magnifing glass icon or pressing enter will bring the package up in the list. Click the install button.
-![GitHub Logo](/images/Nodered-Manage-Palette.jpeg)
+![GitHub Logo](/images/Nodered-Manage-Palette.jpeg)![GitHub Logo](/images/Nodered-Search-Palette.png)
 
 
