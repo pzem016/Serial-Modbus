@@ -54,7 +54,7 @@ Now that the dependencies are met, the following will detail the process of inte
 
 - Support the function codes presented by the device
   - Read Holding Register - 0x03
-  - Read Import Register - 0x04
+  - Read Input Register - 0x04
   - Write Single Register - 0x06
   - [ ] ToDo _ Calibaration - 0x41
 
@@ -73,3 +73,10 @@ Register |      Description       |  Resolution
 0x0007   | Frequency    16 bits   | .1 Hz
 0x0008   | Power Factor 16 bits   | .01 PF
 0x0009   | Alarm Status           | 0xFFFF on / 0x0000 off
+
+  - Function Code 0x06 - Modbus Writer sends only 1 register of 16 bits
+
+Register |      Description       |  Resolution
+---------|------------------------|---------------------
+0x0001   | Power Alarm Threshold  | 1 W 
+0x0002   | Modbud RTN Address     | 0x0001 - 0x00F7
