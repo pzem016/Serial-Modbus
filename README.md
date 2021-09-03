@@ -32,7 +32,7 @@ Installing the required palettes is straight forward and can be completed throug
 ![GitHub Logo](/images/Nodered-Search-Palette1.png)
 ![GitHub Logo](/images/Nodered-Search-Palette2.png)
 
-Now that the dependencies are met, the following will detail the process of integrating the RS482 to USB on the Pi.
+Now that the dependencies are met, the following will detail the process of integrating the RS485 to USB on the Pi.
 
 
 ## Design Considerations
@@ -42,7 +42,9 @@ Now that the dependencies are met, the following will detail the process of inte
   - Configuration of the numbered /dev/ttyUSB[0] 
     - The Pi has four native USB ports
     - Select a USB 2 for the communications
-    - Shell command:
+      - Insert a prewired RS485 to USB dongle noting the A & B color schem of the hookup wire
+      - My installation is less than 4 feet from the unit and CT (current transformer) and opted to use cat 5 scrap network cable 
+    - Shell command to list the ports:
       - sudo ls -la /dev/ttyUSB*
   - /dev/ttyUSB0 will be used throughout the remainder of this guid
   - Configure the Modbus serial interface
@@ -81,3 +83,10 @@ Register |      Description       |  Resolution
 ---------|------------------------|---------------------
 0x0001   | Power Alarm Threshold  | 1 W 
 0x0002   | Modbud RTN Address     | 0x0001 - 0x00F7
+
+- Utilize a properly formatted JSON message to pass in to the reader (Getter) or writer of the following format
+  - Code:
+    ```javascript
+    { "value" : buffer, "fc" : FunctionCall, "unitid" : SlaveId, "address" : RegisterAddress, "quantity" : NumbToRead }
+    ```
+
