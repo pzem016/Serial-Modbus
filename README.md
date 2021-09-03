@@ -1,6 +1,6 @@
 # PZEM-016 - Serial-Modbus
 ## Energy Monitor - PZEM-016 - Nodered
-The purpose of this repository is to memorialize the base configuration of nodered on a Raspberry Pi 4B - 8GB. Using the an offical image for "Raspberry Pi OS with desktop and recommended software" that can be downloaded from:
+The purpose of this repository is to memorialize the base configuration of nodered on a Raspberry Pi 4B - 8GB. Using the offical image for "Raspberry Pi OS with desktop and recommended software" that can be downloaded from:
 
 https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit
 
