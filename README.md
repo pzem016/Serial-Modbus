@@ -89,5 +89,14 @@ Register |      Description       |  Resolution
     ```javascript
     { "value" : buffer, "fc" : FunctionCall, "unitid" : SlaveId, "address" : RegisterAddress, "quantity" : NumbToRead }
     ```
-    - The buffer parameter is message dependent 
+  - The buffer parameter is message dependent 
 
+##UI Design Considerations
+- The screen to be formatted for an iPhone Pro (1366 x 1024 px)
+  - Information to display 6 meter readings in a guage format
+  - ![GitHub Logo](/images/UI-Top.png)
+  - Enbeded iFrames for parameter collection supporting
+    - Changing of the Unit Id
+    - Changing the Power Alarm parameters
+    - Clearing the cumulative energy usage
+  - ![GitHub Logo](/images/UI-Top.png)
