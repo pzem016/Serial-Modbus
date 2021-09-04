@@ -77,7 +77,7 @@ Register |      Description       |  Resolution
 0x0009   | Alarm Status           | 0xFFFF on / 0x0000 off
 
 - Utilize the write register address table
-  - Function Code 0x06 - Modbus Writer sends only 1 register of 16 bits
+  - Function Code 0x06 - **Modbus Writer sends only 1 register of 16 bits
 
 Register |      Description       |  Resolution
 ---------|------------------------|---------------------
@@ -89,4 +89,5 @@ Register |      Description       |  Resolution
     ```javascript
     { "value" : buffer, "fc" : FunctionCall, "unitid" : SlaveId, "address" : RegisterAddress, "quantity" : NumbToRead }
     ```
+    - The buffer parameter is message dependent 
 
