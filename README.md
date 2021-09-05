@@ -92,7 +92,7 @@ Register |      Description       |  Resolution
   - The buffer parameter is message dependent 
 
 ##UI Design Considerations
-- The screen to be formatted for an iPhone Pro (1366 x 1024 px)
+- The screen to be formatted for an iPhone 12 Pro Max (428 x 926 px, dpr 2)
   - Information to display 6 meter readings in a guage format
   - ![GitHub Logo](/images/UI-Top.png)
   - Enbeded iFrames for parameter collection supporting
